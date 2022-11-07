@@ -1,3 +1,14 @@
+<?php 
+
+	session_start();
+
+	// check if the user logged in or not 
+	if (!isset($_SESSION['login_id'])){
+		header("location: login.php");
+		exit();
+	}	
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
