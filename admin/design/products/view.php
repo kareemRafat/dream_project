@@ -2,7 +2,7 @@
 <br>
 <br>
 <table class="table table-hover table-bordered table-striped">
-  <thead>
+  <thead >
     <tr>
       <th>id</th>
       <th>name</th>
@@ -25,7 +25,7 @@
         <td><?= $product['name'] ?></td>
         <td><?= $product['price'] ?></td>
         <td><?= $product['sale'] ?></td>
-        <td><?= $product['img'] ?></td>
+        <td><img style='width:100px' src="images/<?= $product['img'] ?>"></td>
         <td><?php
           $cat_id = $product['cat_id'] ;
           $selectCat = "SELECT name FROM categories WHERE id = $cat_id ";
